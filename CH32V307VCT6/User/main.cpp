@@ -1,4 +1,4 @@
-/********************************** (C) COPYRIGHT *******************************
+﻿/********************************** (C) COPYRIGHT *******************************
 * File Name          : main.c
 * Author             : WCH
 * Version            : V1.0.0
@@ -35,7 +35,7 @@
  *
  * @return  none
  */
-int main(void)
+extern "C" int main(void)
 {
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	SystemCoreClockUpdate();
@@ -50,4 +50,19 @@ int main(void)
 
 	}
 }
+
+// C++工程添加下面两个函数，才能链接。
+// 不然汇编中调用__libc_init_array和__libc_fini_array 找不到下面两个函数
+extern "C" void _init(void) {;}
+
+/* Make sure you have C linkage when defining in c++ file */
+extern "C"
+void _fini()
+{
+    /* Either leave empty, or infinite loop here */
+    while (true)
+        __asm volatile ("NOP");
+}
+
+
 

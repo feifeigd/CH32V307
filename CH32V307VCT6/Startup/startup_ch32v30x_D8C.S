@@ -1,4 +1,4 @@
-/********************************** (C) COPYRIGHT *******************************
+﻿/********************************** (C) COPYRIGHT *******************************
 * File Name          : startup_ch32v30x_D8C.s
 * Author             : WCH
 * Version            : V1.0.0
@@ -340,9 +340,11 @@ DMA2_Channel11_IRQHandler:  1:  j 1b
 handle_reset:
 .option push 
 .option	norelax 
+	// 初始化 gp
 	la gp, __global_pointer$
 .option	pop 
 1:
+	// 初始化 sp
 	la sp, _eusrstack 
 2:
 	/* Load data section from flash to RAM */
@@ -380,6 +382,10 @@ handle_reset:
  	la t0, _vector_base
     ori t0, t0, 3           
 	csrw mtvec, t0
+
+	la a0, __libc_fini_array
+	call atexit
+	call __libc_init_array
 
     jal  SystemInit
 	la t0, main
