@@ -1,0 +1,156 @@
+!SESSION 2024-05-28 15:07:27.335 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data E:\luofei\CH32V307
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:29.933
+!MESSAGE Plug-in 'org.eclipse.search' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): org.eclipse.search.OpenFileSearchPage
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:29.956
+!MESSAGE Plug-in 'org.eclipse.search' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): org.eclipse.search.OpenSearchDialog
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:29.957
+!MESSAGE Plug-in 'org.eclipse.search' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu/textSearchSubMenu' is invalid): org.eclipse.search.TextSearchWorkingSet
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:29.957
+!MESSAGE Plug-in 'org.eclipse.search' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu/textSearchSubMenu' is invalid): org.eclipse.search.TextSearchFile
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:29.958
+!MESSAGE Plug-in 'org.eclipse.search' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu/textSearchSubMenu' is invalid): org.eclipse.search.TextSearchProject
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:29.958
+!MESSAGE Plug-in 'org.eclipse.search' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu/textSearchSubMenu' is invalid): org.eclipse.search.TextSearchWorkspace
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:31.026
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.manageConfigsAction2
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:31.026
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.buildConfigMenuAction
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:31.027
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.wsselection
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:07:31.028
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-28 15:08:30.905
+!MESSAGE Indexed 'CH32V307VCT6' (31 sources, 32 headers) in 0.805 sec: 5,015 declarations; 14,169 references; 3 unresolved inclusions; 50 syntax errors; 5,264 unresolved names (22%)
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.739
+!MESSAGE Unable to associate action set with part: org.eclipse.cdt.ui.editor.CEditor. Action set org.eclipse.cdt.ui.SearchActionSet not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.740
+!MESSAGE Unable to associate action set with part: org.eclipse.cdt.ui.editor.CEditor. Action set org.eclipse.cdt.ui.CodingActionSet not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.740
+!MESSAGE Unable to associate action set with part: org.eclipse.cdt.ui.editor.CEditor. Action set org.eclipse.cdt.ui.text.c.actionSet.presentation not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.742
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.OpenIncludeBrowser
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.743
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.OpenCallHierarchy
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.744
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.introduceIQMath
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.744
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.OpenTypeHierarchy
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.744
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.OpenDeclaration
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.745
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.openElementInCallHierarchy
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 15:08:40.745
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.cdt.ui.actions.openTypeInHierarchy
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-05-28 15:10:26.269
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-05-28 15:10:26.270
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-05-28 15:10:26.270
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10008 2024-05-28 15:10:31.036
+!MESSAGE All participants generating preChange actions are being removed because an exception was thrown when the main refactoring was executed.
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: Cannot move '/CH32V307VCT6/Peripheral'. Destination should not be under source's hierarchy.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:199)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1480)
+	at org.eclipse.ltk.core.refactoring.resource.RenameResourceChange.perform(RenameResourceChange.java:118)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2307)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2334)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2307)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2334)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2024-05-28 15:10:31.038
+!MESSAGE Participant 'org.eclipse.cdt.ui.headerFileRenameParticipant' removed due to the following exception
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2024-05-28 15:10:31.067
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: Cannot move '/CH32V307VCT6/Peripheral'. Destination should not be under source's hierarchy.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:199)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1480)
+	at org.eclipse.ltk.core.refactoring.resource.RenameResourceChange.perform(RenameResourceChange.java:118)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2307)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2334)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2307)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2334)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 4 2024-05-28 15:10:31.067
+!MESSAGE assertion failed: Cannot move '/CH32V307VCT6/Peripheral'. Destination should not be under source's hierarchy.
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: Cannot move '/CH32V307VCT6/Peripheral'. Destination should not be under source's hierarchy.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.resources.Resource.assertMoveRequirements(Resource.java:199)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1480)
+	at org.eclipse.ltk.core.refactoring.resource.RenameResourceChange.perform(RenameResourceChange.java:118)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2307)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2334)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2307)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2334)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-28 16:02:24.544
+!MESSAGE Indexed 'CH32V307VCT6' (31 sources, 128 headers) in 0.813 sec: 9,797 declarations; 25,879 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.ui 2 0 2024-05-28 16:05:50.393
+!MESSAGE Default project not found in New C/C++ Project Wizard
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 16:06:00.718
+!MESSAGE Plug-in 'org.eclipse.ui.ide' contributed an invalid Menu Extension (Path: 'navigate/goTo' is invalid): goToResource
+
+!ENTRY org.eclipse.ui 4 4 2024-05-28 16:06:00.718
+!MESSAGE Plug-in 'org.eclipse.ui.ide' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.OpenWorkspaceFile
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-28 16:08:38.894
+!MESSAGE Indexed 'CH32V307VCT6' (31 sources, 128 headers) in 0.775 sec: 9,799 declarations; 25,889 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
