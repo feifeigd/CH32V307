@@ -1,0 +1,6 @@
+E:\luofei\CH32V307\CH32V307.wvsln:
+-arm:${eclipse_home}\toolchain\arm-none-eabi-gcc\bin
+-build:${eclipse_home}\toolchain\Build Tools\bin
+-openocd name:openocd.exe
+-openocd path:${eclipse_home}\toolchain\OpenOCD\bin
+-rv:${eclipse_home}\toolchain\RISC-V Embedded GCC\bin
