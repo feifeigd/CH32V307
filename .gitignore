@@ -32,3 +32,5 @@
 *.app
 
 .metadata/
+obj/
+
