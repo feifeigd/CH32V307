@@ -4,3 +4,5 @@ E:\luofei\CH32V307\CH32V307.wvsln:
 -openocd name:openocd.exe
 -openocd path:${eclipse_home}\toolchain\OpenOCD\bin
 -rv:${eclipse_home}\toolchain\RISC-V Embedded GCC\bin
+E:\luofei\CH32V307\CH32V307VCT6
+E:\luofei\CH32V307\blink

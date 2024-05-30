@@ -1,4 +1,7 @@
-16:47:38 **** Incremental Build of configuration obj for project CH32V307VCT6 ****
-make -j16 all 
+00:26:13 **** Incremental Build of configuration obj for project CH32V307VCT6 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:26:15 **** Incremental Build of configuration obj for project blink ****
+make -j8 all 
    text	   data	    bss	    dec	    hex	filename
-   7764	    156	   2212	  10132	   2794	CH32V307VCT6.elf
+   7512	    152	   2068	   9732	   2604	blink.elf

@@ -1,7 +1,6 @@
-16:47:38 **** Incremental Build of configuration obj for project CH32V307VCT6 ****
-make -j16 all 
-   text	   data	    bss	    dec	    hex	filename
-   7764	    156	   2212	  10132	   2794	CH32V307VCT6.elf
+00:26:13 **** Incremental Build of configuration obj for project CH32V307VCT6 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
 
-16:47:39 Build Finished. 0 errors, 0 warnings. (took 405ms)
+00:26:14 Build Finished. 0 errors, 0 warnings. (took 676ms)
 

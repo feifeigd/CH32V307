@@ -1,4 +1,4 @@
-﻿/********************************** (C) COPYRIGHT *******************************
+/********************************** (C) COPYRIGHT *******************************
 * File Name          : main.c
 * Author             : WCH
 * Version            : V1.0.0
@@ -37,33 +37,19 @@
  */
 extern "C" int main(void)
 {
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); // 中断优先级分组2
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	SystemCoreClockUpdate();
 	Delay_Init();
 	USART_Printf_Init(115200);	
 	printf("SystemClk:%d\r\n",SystemCoreClock);
 	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
 	printf("This is printf example\r\n");
+
 	int i = 0;
 	while(1)
     {
-	    printf("This is printf example i=%d\r\n", i++);
-
+	    printf("blink i++=%d\n", i++);
+	    Delay_Ms(500);
 	}
 }
-
-// C++工程添加下面两个函数，才能链接。
-// 不然汇编中调用__libc_init_array和__libc_fini_array 找不到下面两个函数
-extern "C" void _init(void) {;}
-
-/* Make sure you have C linkage when defining in c++ file */
-extern "C"
-void _fini()
-{
-    /* Either leave empty, or infinite loop here */
-    while (true)
-        __asm volatile ("NOP");
-}
-
-
 
