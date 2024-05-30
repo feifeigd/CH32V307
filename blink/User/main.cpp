@@ -19,7 +19,7 @@
 */
 
 #include "debug.h"
-
+#include <Led.h>
 
 /* Global typedef */
 
@@ -45,11 +45,24 @@ extern "C" int main(void)
 	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
 	printf("This is printf example\r\n");
 
+    Led led1(GPIOA, GPIO_Pin_7, RCC_APB2Periph_GPIOA);
+    Led led2(GPIOA, GPIO_Pin_8, RCC_APB2Periph_GPIOA);
+
+    led1.Init();
+    led2.Init();
 	int i = 0;
 	while(1)
     {
 	    printf("blink i++=%d\n", i++);
 	    Delay_Ms(500);
+
+        led1.Open();
+        led2.Close();
+        Delay_Ms(500);
+
+        led1.Close();
+        led2.Open();
+        Delay_Ms(500);
 	}
 }
 
