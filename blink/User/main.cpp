@@ -45,11 +45,8 @@ extern "C" int main(void)
 	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
 	printf("This is printf example\r\n");
 
-    Led led1(GPIOD, GPIO_Pin_12, RCC_APB2Periph_GPIOD);
-    Led led2(GPIOD, GPIO_Pin_13, RCC_APB2Periph_GPIOD);
-
-    led2.Init();
-    led1.Init();
+    Led led_red(GPIOD, GPIO_Pin_12, RCC_APB2Periph_GPIOD);  // DS0
+    Led led_green(GPIOD, GPIO_Pin_13, RCC_APB2Periph_GPIOD);    // DS1
 
 	int i = 0;
 	while(1)
@@ -57,12 +54,12 @@ extern "C" int main(void)
 	    printf("blink i++=%d\n", i++);
 	    Delay_Ms(500);
 
-        led1.Set(); // 高电平，灯灭
-        led2.Reset(); // 低电平，灯亮
+	    led_red.Set(); // 高电平，灯灭
+	    led_green.Reset(); // 低电平，灯亮
         Delay_Ms(500);
 
-        led1.Reset();
-        led2.Set();
+        led_red.Reset();
+        led_green.Set();
         Delay_Ms(500);
 	}
 }

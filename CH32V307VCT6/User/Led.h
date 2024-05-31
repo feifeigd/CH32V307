@@ -12,10 +12,9 @@ class Led{
 private:
     GPIO_TypeDef*   GPIOx_{};
     uint16_t        GPIO_Pin_{};
-    uint32_t        RCC_APB2Periph_{};
+    void Init();
 public:
     Led(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, uint32_t RCC_APB2Periph);
-    void Init();
 
     // 设置为高电平
     void Set();
@@ -23,4 +22,3 @@ public:
     // 设置为低电平
     void Reset();
 };
-

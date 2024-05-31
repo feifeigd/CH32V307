@@ -10,14 +10,13 @@
 Led::Led(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, uint32_t RCC_APB2Periph)
     : GPIOx_{GPIOx}
     , GPIO_Pin_{GPIO_Pin}
-    , RCC_APB2Periph_{RCC_APB2Periph}
 {
-
+    // 先调用 RCC_APB2PeriphClockCmd，再调用 GPIO_Init，否则不生效
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph, ENABLE);
+    Init();
 }
 
 void Led::Init(){
-    // 先调用 RCC_APB2PeriphClockCmd，再调用 GPIO_Init，否则不生效
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_, ENABLE);
 
     GPIO_InitTypeDef conf = {
         .GPIO_Pin   = GPIO_Pin_,
