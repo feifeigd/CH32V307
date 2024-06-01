@@ -9,7 +9,7 @@ protected:
     uint16_t        GPIO_Pin_{};
 public:
     GpioPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-    virtual void Init() = 0;
+    virtual void Init();
     
     // 设置为高电平
     void Set();
