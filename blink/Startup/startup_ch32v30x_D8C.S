@@ -13,6 +13,7 @@
 	.section	.init,"ax",@progbits
 	.global	_start
 	.align	1
+// Èë¿Úº¯Êý
 _start:
 	j	handle_reset
 	.word 0x00000013

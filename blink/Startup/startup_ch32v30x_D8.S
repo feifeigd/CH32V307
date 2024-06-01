@@ -10,8 +10,13 @@
 * microcontroller manufactured by Nanjing Qinheng Microelectronics.
 *******************************************************************************/
 
+	// .section name,"flags"
+	// "flags"="ax", a: section is allocatable, 可以将allocatable理解为relocatable，也就是段可以被装载到内存的任何位置并运行
+	// x： section is executable 表示段具有可执行属性
+	// @progbits, section contains data
 	.section	.init,"ax",@progbits
 	.global	_start
+	// 下一个与 2^1 对齐的地址
 	.align	1
 _start:
 	j	handle_reset
@@ -28,6 +33,7 @@ _start:
 	.word 0x00000013
 	.word 0x00000013
 	.word 0x00100073
+
     .section    .vector,"ax",@progbits
     .align  1
 _vector_base:
@@ -323,6 +329,7 @@ handle_reset:
 	la gp, __global_pointer$
 .option	pop
 1:
+	// _eusrstack 是 Link.ld 内置函数PROVIDE导出的符号
 	la sp, _eusrstack
 2:
 	/* Load data section from flash to RAM */

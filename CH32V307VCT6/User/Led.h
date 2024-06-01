@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 
 /*
  * Led.h
@@ -6,19 +6,10 @@
  *  Created on: May 29, 2024
  *      Author: PC
  */
-#include <ch32v30x.h>
+#include "GpioPin.h"
 
-class Led{
-private:
-    GPIO_TypeDef*   GPIOx_{};
-    uint16_t        GPIO_Pin_{};
-    void Init();
+class Led: public GpioPin{
 public:
-    Led(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, uint32_t RCC_APB2Periph);
-
-    // …Ë÷√Œ™∏ﬂµÁ∆Ω
-    void Set();
-
-    // …Ë÷√Œ™µÕµÁ∆Ω
-    void Reset();
+    Led(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+    void Init()override;
 };

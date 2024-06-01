@@ -1,4 +1,4 @@
-/********************************** (C) COPYRIGHT *******************************
+ï»¿/********************************** (C) COPYRIGHT *******************************
 * File Name          : main.c
 * Author             : WCH
 * Version            : V1.0.0
@@ -18,7 +18,7 @@
 
 */
 
-#include "debug.h"
+#include <debug.h>
 #include <Led.h>
 
 /* Global typedef */
@@ -45,8 +45,12 @@ extern "C" int main(void)
 	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
 	printf("This is printf example\r\n");
 
-    Led led_red(GPIOD, GPIO_Pin_12, RCC_APB2Periph_GPIOD);  // DS0
-    Led led_green(GPIOD, GPIO_Pin_13, RCC_APB2Periph_GPIOD);    // DS1
+	// å¼€å¯æ—¶é’Ÿ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    Led led_red(GPIOD, GPIO_Pin_12);  // DS0
+    Led led_green(GPIOD, GPIO_Pin_13);    // DS1
+    led_red.Init();
+    led_green.Init();
 
 	int i = 0;
 	while(1)
@@ -54,8 +58,8 @@ extern "C" int main(void)
 	    printf("blink i++=%d\n", i++);
 	    Delay_Ms(500);
 
-	    led_red.Set(); // ¸ßµçÆ½£¬µÆÃğ
-	    led_green.Reset(); // µÍµçÆ½£¬µÆÁÁ
+	    led_red.Set(); // é«˜ç”µå¹³ï¼Œç¯ç­
+	    led_green.Reset(); // ä½ç”µå¹³ï¼Œç¯äº®
         Delay_Ms(500);
 
         led_red.Reset();
@@ -65,8 +69,8 @@ extern "C" int main(void)
 }
 
 
-// C++¹¤³ÌÌí¼ÓÏÂÃæÁ½¸öº¯Êı£¬²ÅÄÜÁ´½Ó¡£
-// ²»È»»ã±àÖĞµ÷ÓÃ__libc_init_arrayºÍ__libc_fini_array ÕÒ²»µ½ÏÂÃæÁ½¸öº¯Êı
+// C++å·¥ç¨‹æ·»åŠ ä¸‹é¢ä¸¤ä¸ªå‡½æ•°ï¼Œæ‰èƒ½é“¾æ¥ã€‚
+// ä¸ç„¶æ±‡ç¼–ä¸­è°ƒç”¨__libc_init_arrayå’Œ__libc_fini_array æ‰¾ä¸åˆ°ä¸‹é¢ä¸¤ä¸ªå‡½æ•°
 extern "C" void _init(void) {;}
 
 /* Make sure you have C linkage when defining in c++ file */
