@@ -16,4 +16,10 @@ public:
 
     // 设置为低电平
     void Reset();
+
+    // @return 0/1
+    uint8_t ReadInputBit();
+
+    // 电平反转
+    void toggle();
 };

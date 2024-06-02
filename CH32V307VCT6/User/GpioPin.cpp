@@ -32,3 +32,12 @@ void GpioPin::Set(){
 void GpioPin::Reset(){
     GPIO_ResetBits(GPIOx_, GPIO_Pin_);
 }
+
+uint8_t GpioPin::ReadInputBit(){
+    return GPIO_ReadInputDataBit(GPIOx_, GPIO_Pin_);
+}
+
+void GpioPin::toggle(){
+    uint32_t odr = GPIOx_->OUTDR;
+    GPIOx_->BSHR = ((odr & GPIO_Pin_) << 16) | (~odr & GPIO_Pin_);
+}
