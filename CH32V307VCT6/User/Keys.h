@@ -10,7 +10,7 @@
 
 // 3个板载按键
 class Keys{
-private:
+public:
     Key key0_{GPIOA, GPIO_Pin_1, Key::UP};
     Key key1_{GPIOC, GPIO_Pin_5, Key::UP};
     Key key_up_{GPIOA, GPIO_Pin_0, Key::DOWN};
