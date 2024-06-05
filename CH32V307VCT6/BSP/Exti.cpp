@@ -23,9 +23,8 @@ void Exti::Init(){
     GPIO_EXTILineConfig(GPIO_PortSourceGPIOC, GPIO_PinSource5);  // PC5 key1_
 
     // 2.初始化 EXTI
-    EXTI_InitTypeDef exti_conf = {
-        .EXTI_Mode = EXTI_Mode_Interrupt, // 配置为中断模式
-    };
+    EXTI_InitTypeDef exti_conf = {};
+    exti_conf.EXTI_Mode = EXTI_Mode_Interrupt, // 配置为中断模式
 
     exti_conf.EXTI_Trigger = EXTI_Trigger_Falling, // 下降沿触发, key0_,key1_
     // key0_
@@ -42,10 +41,9 @@ void Exti::Init(){
 
     // PFIC(可编程快速中断控制器) 驱动
     // 1. 初始化PFIC
-    NVIC_InitTypeDef nvic_conf = {
-        .NVIC_IRQChannelPreemptionPriority = 0x02, // 抢占优先级2
-        .NVIC_IRQChannelCmd = ENABLE, // 使能中断
-    };
+    NVIC_InitTypeDef nvic_conf = {};
+    nvic_conf.NVIC_IRQChannelPreemptionPriority = 0x02, // 抢占优先级2
+    nvic_conf.NVIC_IRQChannelCmd = ENABLE, // 使能中断
 
     nvic_conf.NVIC_IRQChannel = WKUP_INT_IRQn, // 外部中断线1
     nvic_conf.NVIC_IRQChannelSubPriority = 0x03, // 响应优先级3

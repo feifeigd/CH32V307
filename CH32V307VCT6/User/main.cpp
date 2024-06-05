@@ -41,8 +41,8 @@ extern "C" int main(void)
 	SystemCoreClockUpdate();
 	Delay_Init();
 	USART_Printf_Init(115200);	
-	printf("SystemClk:%d\r\n",SystemCoreClock);
-	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
+	printf("SystemClk:%lu\r\n",SystemCoreClock);
+	printf( "ChipID:%08lx\r\n", DBGMCU_GetCHIPID() );
 	printf("This is printf example\r\n");
 	int i = 0;
 	while(1)

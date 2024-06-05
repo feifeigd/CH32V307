@@ -15,9 +15,8 @@ Key::Key(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, Mode mode)
 }
 
 void Key::Init(){
-    GPIO_InitTypeDef conf = {
-        .GPIO_Pin = GPIO_Pin_,
-    };
+    GPIO_InitTypeDef conf = {};
+    conf.GPIO_Pin = GPIO_Pin_;
 
     switch(mode_){
     case Mode::UP:
